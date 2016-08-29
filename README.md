@@ -19,7 +19,8 @@ $ python discosub/main.py run <your target domain>
 
 ## Guidelines
 * Distributing via pipy
-* Using system command (```$ disco run <your target domain``` instead of ```$ python discosub/main.py run <your target domain>```)
+* Using system command (```$ discosub run <your target domain``` instead of ```$ python discosub/main.py run <your target domain>```)
+* Execute discosub in a docker container and provide a standalone image of this
 
 ## Credits
 Author: 4383 (Hervé Beraud)
