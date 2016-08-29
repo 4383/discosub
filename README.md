@@ -6,12 +6,20 @@ Simple and faster subdomain discover
 
 ## Usages
 ```shell
-$ discosub run <your target domain>
+$ git clone https://github.com/4383/discosub
+$ cd discosub
+$ python discosub/main.py run <your target domain>
 ```
 
-## Features
+## Prerequistes
+* python >= 2.7 (but prefer python3.x)
 
+## Features
 * Analyze a root domain a discover these subdomains
+
+## Guidelines
+* Distributing via pipy
+* Using system command (```$ disco run <your target domain``` instead of ```$ python discosub/main.py run <your target domain>```)
 
 ## Credits
 Author: 4383 (Hervé Beraud)
