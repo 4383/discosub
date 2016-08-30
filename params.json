@@ -1,6 +1,0 @@
-{
-  "name": "Discosub",
-  "tagline": "Simple and faster subdomain discover",
-  "body": "### Welcome to Discosub official website.\r\nDiscosub is a fingerprint tools that provide subdomain discover scanning on a root domain.\r\n\r\n### Usages\r\nvia pipy:\r\n```shell\r\n$ pip install discosub\r\n$ discosub run <specified root domain>\r\n```\r\n\r\nvia github:\r\n```shell\r\n$ git clone https://github.com/4383/discosub\r\n$ cd discosub\r\n$ python setup.py install\r\n$ discosub run <specified root domain>\r\n```\r\n### Features\r\n* Root domain subdomain discover scanning.\r\n\r\n### Authors and Contributors\r\nDiscosub was created by [Hervé Beraud](http://www.herve-beraud.ovh/) (@4383).\r\n\r\n### Support or Contact\r\nHaving trouble with Discosub ? Report an [issue](https://github.com/4383/discosub/issues) or [contact the author](https://github.com/4383/) and we’ll help you sort it out.\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
