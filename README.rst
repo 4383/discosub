@@ -1,40 +1,58 @@
-===============================
-discosub
-===============================
 
+Try pandoc!
 
-.. image:: https://img.shields.io/pypi/v/discosub.svg
-        :target: https://pypi.python.org/pypi/discosub
+pandoc --from markdown --to rst
 
-.. image:: https://img.shields.io/travis/4383/discosub.svg
-        :target: https://travis-ci.org/4383/discosub
+  from
 
-.. image:: https://readthedocs.org/projects/discosub/badge/?version=latest
-        :target: https://discosub.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
+to
 
-.. image:: https://pyup.io/repos/github/4383/discosub/shield.svg
-     :target: https://pyup.io/repos/github/4383/discosub/
-     :alt: Updates
+discosub 0.1.0
+==============
 
+Simple and faster subdomain discover
 
-Subdomain discover
+-  Free software: GNU General Public License v3
 
+Usages
+------
 
-* Free software: GNU General Public License v3
-* Documentation: https://discosub.readthedocs.io.
+.. code:: shell
 
+    $ git clone https://github.com/4383/discosub
+    $ cd discosub
+    $ python discosub/main.py run <your target domain>
+
+Prerequistes
+------------
+
+-  python >= 2.7 (but prefer python3.x)
 
 Features
 --------
 
-* TODO
+-  Analyze a root domain a discover these subdomains
+
+Guidelines
+----------
+
+-  Distributing via pipy
+-  Using system command (``$ discosub run <your target domain`` instead
+   of ``$ python discosub/main.py run <your target domain>``)
+-  Execute discosub in a docker container and provide a standalone image
+   of this
 
 Credits
----------
+-------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+Author: 4383 (Hervé Beraud)
+
+This package was created with `Cookiecutter`_ and the
+`audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
 
+pandoc 1.17.2
+
+© 2013–2015 John MacFarlane
