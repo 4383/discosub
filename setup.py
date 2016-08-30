@@ -33,7 +33,7 @@ setup(
                  'discosub'},
     entry_points={
         'console_scripts': [
-            'discosub=discosub.cli:main'
+            'discosub=discosub:main'
         ]
     },
     include_package_data=True,

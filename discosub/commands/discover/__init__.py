@@ -9,7 +9,7 @@ try:
     import Queue
 except ImportError:
     import queue as Queue
-from core.ui import info, success, fail
+from discosub.core.ui import info, success, fail
 
 results = []
 

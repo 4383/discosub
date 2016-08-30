@@ -6,8 +6,8 @@ __version__ = '0.1.0'
 
 import argparse
 import sys
-from commands.discover import discover as cmd_discover
-from core.ui import fail, splash
+from discosub.commands.discover import discover as cmd_discover
+from discosub.core.ui import fail, splash
 
 class DiscoSub(object):
 
