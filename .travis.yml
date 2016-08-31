@@ -27,7 +27,7 @@ deploy:
   password:
     secure: "sdchgQJBSRUaL6w221ogIy5JksMSSgmn7d9JxIG2rPBin8wr0q/QWxSvHWD0pAmanWpYNiW9KPPaJeLQ1MA4GdwAww1GZcE1BgaJ7Jk2ZZWv3CCn56VchrYjNPaf9q6F4DX6YW1s+VkwyfZvWCH6KSOqFxt5s40iY2RkawSuHsFQWjUgG7R337oP6aMvYnJhCkmVNweneE+49GYJqwIZgT732pBr/JvG+BfCDrGyVt6+JHtYC6/7an9cSAWozhx5xbeHrTV4UoZf0N4/Y6Ri3tJ1vfdqzHWfbpgE6YXPbeIILF3IwuJOCiadO6mowOZe2dkr3Vyv9P4+eUQu1GxoWJt9NSkgQBm3+FSd4zN/23H917EvJ5vK1xp+H+9KyeiR9BuWdT3977GNfsTjVi+rGGLdTOS43Vq/Mg6ELSQHijbU5Ln69sH0NNDQwnk7hoo7niAb407cbHgOb7+CJIQ/VIEP8zs5jfLTYwf0rkiWb4+RbHCDNep6yVqRgpoPFBtxb3Ua/fu4F+ysaR2YXU8FfNfJGdkM7wSqo3wShV/f6XwLvOXtBYtJxQYl0QoPmHU7scekH1YcUKM3VVfqfefHYwuLdNflzq5D6fOpDBW+WqlJ1kIduPH06em12sfUcUrKHNBLgoe4vTvoGuJv6uZ53/sittwOvLQdOQQ0jLweKJ4="
   on:
-    tags: true
+    branch: master
     repo: 4383/discosub
     condition: $TOXENV == py27
 
