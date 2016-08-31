@@ -1,4 +1,4 @@
-discosub 0.1.2
+discosub 0.1.3
 ==============
 
 Simple and faster subdomain discover
