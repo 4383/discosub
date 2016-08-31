@@ -7,7 +7,7 @@ pandoc --from markdown --to rst
 
 to
 
-discosub 0.1.0
+discosub 0.1.1
 ==============
 
 Simple and faster subdomain discover
