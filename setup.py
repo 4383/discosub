@@ -20,7 +20,7 @@ test_requirements = [
 setup(
     name='discosub',
     version='0.1.11',
-    description="Subdomain discover",
+    description="Simple, Faster, & Efficient, Subdomain Discovery Scanner",
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
     author_email='herveberaud.pro@gmail.com',
@@ -40,8 +40,10 @@ setup(
     zip_safe=False,
     keywords='discosub',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
+        'Intended Audience :: System Administrators',
+        'Intended Audience :: Information Technology',
         'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
@@ -51,6 +53,9 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Environment :: Console',
+        'Topic :: Security',
+        'Topic :: Utilities',
     ],
     test_suite='tests',
     tests_require=test_requirements

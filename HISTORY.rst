@@ -7,8 +7,25 @@ History
 
 * First release on Github.
 
-0.1.1 (2016-08-31)
+0.1.6 (2016-08-31)
 ------------------
 
 * First release on Pypi.
 * Using click instead of argparse
+
+0.1.10 (2016-08-31)
+-------------------
+
+* Dockerize app
+* Stable pypi deployment via travis-ci
+
+0.1.11 (2016-08-31)
+-------------------
+
+* Fix somes documentation mistakes and syntax error
+
+0.1.12 (2016-08-31)
+-------------------
+
+* Fix somes documentation mistakes and syntax error
+* Update pypi project classifiers
