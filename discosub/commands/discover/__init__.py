@@ -57,7 +57,7 @@ def thats_all_folks(start):
         print(result)
 
 
-def analyze(args):
+def analyze(target):
     start = datetime.datetime.now()
     subdomains = []
     with open(os.path.join("dictionaries", "default.txt")) as myDictionary:
@@ -73,20 +73,10 @@ def analyze(args):
         worker.start()
         workers.append(worker)
 
-    [queue.put("{0}.{1}".format(sub.replace("\n", ""), args.target)) for sub in subdomains]
+    [queue.put("{0}.{1}".format(sub.replace("\n", ""), target)) for sub in subdomains]
     [queue.put("quit") for worker in workers]
 
     for worker in workers:
         worker.join()
 
     thats_all_folks(start)
-
-def discover():
-    global VERBOSE
-    parser = argparse.ArgumentParser(
-    description='Run a subdomain scanner on specified target')
-    parser.add_argument('target', help='The root specified domain')
-    parser.add_argument('--verbose', help='Activate the verbose mode',
-        default="no")
-    args = parser.parse_args(sys.argv[2:])
-    analyze(args)

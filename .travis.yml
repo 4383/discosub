@@ -27,6 +27,6 @@ script: tox -e ${TOXENV}
 #  password:
 #    secure: "MKf0wijrq5TBQUazgCv1LFOZraSAShapKxllHnQObJnlBELR94b3MaT1fhW4bo3EkE3KnHvgtLHMh5qSteS1D6rjLIZ+w0c7mCpvlEoFU6yPoIWxdkb12u5oRCQX8P27vNLUhyC69zwfEt2QBivq8e1Hb5YtCsOHPiRDKC78fZwF408OAvhJgoaBuMS9V6+obvtYDSV1XL34Gfwm3pc77oTBA6p9abw/N2j+aght4k81hMCUtKS+aKo/T3VhmdzKwI8ZuUq0WUqyznWYO0ISy/DfBhHeDeIrF1yAAdZEwXoQ0Rm1Cd/lxk1V/5H2sGcdWeYZ64EErTTtJIAeiaSDecszNBIvfzrQdTw+jJHO3HLVLRH5QgWdVx/N+SnVAfUz0TVLuRMHjgHBXMhu/hK+zwDSOIcNOWpRH6ATj9TXaIuAsA9WNavOSN9UkhLlRO4+3iK8HaVx6ldonj+iKM8qf+i2dxgA+PmI5uWQ/fUFLlCzImONJm3aJnc5gna6fCa6HdhhYhlNmi5JFgL8D/HOq7XM3WQfEUV9vnabNVIfdRJWoXLPSZiiDwjJV+XWqNw+2EhrloXZf+BqzqojVcQ4SJKB/BVxtoP8ZPUvsFClvS1cjMfs2jtTRk0EuMvnBphcuWCCd2ly174AoSUnaMONMlGejpKlXSnt2HvbVRT3qkk="
 #  on:
-#    branch: pypi
+#    tags: true
 #    repo: 4383/discosub
 #    condition: $TOXENV == py27
