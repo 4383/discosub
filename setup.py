@@ -19,7 +19,7 @@ test_requirements = [
 
 setup(
     name='discosub',
-    version='0.1.7',
+    version='0.1.8',
     description="Subdomain discover",
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
