@@ -1,27 +1,40 @@
-# discosub 0.1.1
+# discosub 0.1.5
 
 Simple and faster subdomain discover
 
 * Free software: GNU General Public License v3
 
-## Usages
-from pypi
+## install
+### From pypi
 ```shell
 pip install discosub
-discosub run <your target domain>
 ```
 
-from docker container
+### As a docker container
 ```shell
 docker pull 4383/discosub:latest
-docker run -e "TARGET=<your target domain>" 4383/discosub:latest
 ```
 
-from sources
+### from sources
 ```shell
 $ git clone https://github.com/4383/discosub
 $ cd discosub
 $ python setup.py install
+```
+
+## Usages
+### From pypi
+```shell
+discosub run <your target domain>
+```
+
+### Inside a docker container
+```shell
+docker run -e "TARGET=<your target domain>" 4383/discosub:latest
+```
+
+### from sources
+```shell
 $ discosub run <your target domain>
 ```
 
