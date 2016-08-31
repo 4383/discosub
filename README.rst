@@ -1,4 +1,4 @@
-discosub 0.1.1
+discosub discosub = '0.1.2'
 ==============
 
 Simple and faster subdomain discover
