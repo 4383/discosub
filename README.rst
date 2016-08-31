@@ -1,21 +1,22 @@
-discosub 0.1.10
-==============
+===============
+discosub 0.1.11
+===============
 
-Simple and faster subdomain discover
+Free and opensource subdomain scanner. Discosub is simple and faster
+subdomain discover
 
 -  Free software: GNU General Public License v3
 
 install
 -------
-
-From pypi
+from pypi
 ~~~~~~~~~
 
 .. code:: shell
 
     pip install discosub
 
-As a docker container
+as a docker container
 ~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: shell
@@ -33,46 +34,41 @@ from sources
 
 Usages
 ------
-
-From pypi
+from pypi
 ~~~~~~~~~
 
 .. code:: shell
 
-    discosub run <your target domain>
+    discosub run google.com
 
-Inside a docker container
+inside a docker container
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: shell
 
-    docker run -e "TARGET=<your target domain>" 4383/discosub:latest
+    docker run -e "TARGET=google.com" 4383/discosub:latest
 
 from sources
 ~~~~~~~~~~~~
 
 .. code:: shell
 
-    $ discosub run <your target domain>
+    $ discosub run google.com
 
 Prerequistes
 ------------
 
--  python >= 2.7 (but prefer python3.x)
+-  python >= 2.6 (but prefer python3.x)
 
 Features
 --------
 
--  Analyze a root domain a discover these subdomains
+-  Analyze a root domain and discover its subdomains
 
 Guidelines
 ----------
 
--  Distributing via pipy
--  Using system command (``$ discosub run <your target domain`` instead
-   of ``$ python discosub/main.py run <your target domain>``)
--  Execute discosub in a docker container and provide a standalone image
-   of this
+-  Perform whois request on discovered subdomains
 
 Credits
 -------
