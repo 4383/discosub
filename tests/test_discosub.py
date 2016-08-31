@@ -14,7 +14,7 @@ import unittest
 from contextlib import contextmanager
 from click.testing import CliRunner
 
-from discosub import discosub
+from discosub import main
 from discosub import cli
 
 

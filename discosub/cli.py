@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 
 import click
+from discosub.main import main as mainstreet
 
 @click.command()
 def main(args=None):
     """Console script for discosub"""
-    click.echo("Replace this message by putting your code into "
-                "discosub.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
+    mainstreet()
 
 
 if __name__ == "__main__":
