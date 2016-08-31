@@ -24,7 +24,7 @@ setup(
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
     author_email='herveberaud.pro@gmail.com',
-    url='https://github.com/4383/discosub',
+    url='https://4383.github.io/discosub/',
     packages=find_packages(
         exclude=['contrib', 'docs', 'tests*', '__pycache__']
     ),
