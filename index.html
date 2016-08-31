@@ -16,7 +16,7 @@
     <header>
       <div class="container">
         <h1>Discosub</h1>
-        <h2>Simple and faster subdomain discover</h2>
+        <h2>Simple, Faster, &amp; Efficient, Subdomain Discovery Scanner </h2>
 
         <section id="downloads">
           <a href="https://github.com/4383/discosub/zipball/master" class="btn">Download as .zip</a>
@@ -33,20 +33,39 @@
 
 <p>Discosub is a fingerprint tools that provide subdomain discover scanning on a root domain.</p>
 
+<p>Discosub is an Free and opensource software.</p>
+
+<p>Discosub test if a list of subdomains exist via fuzzing on root domain.</p>
+
+<p>Discosub use dictionaries for perform an analyze (BruteForce).</p>
+
 <h3>
-<a id="usages" class="anchor" href="#usages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usages</h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h3>
 
-<p>via pipy:</p>
+<p>From pypi:</p>
 
-<div class="highlight highlight-source-shell"><pre>$ pip install discosub
-$ discosub run <span class="pl-k">&lt;</span>specified root domain<span class="pl-k">&gt;</span></pre></div>
+<div class="highlight highlight-source-shell"><pre>$ pip install discosub</pre></div>
 
-<p>via github:</p>
+<p>From Docker hub:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ docker pull 4383/discosub:latest</pre></div>
+
+<p>From sources:</p>
 
 <div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/4383/discosub
 $ <span class="pl-c1">cd</span> discosub
-$ python setup.py install
-$ discosub run <span class="pl-k">&lt;</span>specified root domain<span class="pl-k">&gt;</span></pre></div>
+$ python setup.py install</pre></div>
+
+<h3>
+<a id="usages" class="anchor" href="#usages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usages</h3>
+
+<p>From Python:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ discosub run <span class="pl-k">&lt;</span>specified root domain<span class="pl-k">&gt;</span> <span class="pl-c"># like google.com</span></pre></div>
+
+<p>From Docker:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ docker run -e <span class="pl-s"><span class="pl-pds">"</span>TARGET=google.com<span class="pl-pds">"</span></span> 4383/discosub:latest</pre></div>
 
 <h3>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h3>
@@ -56,9 +75,19 @@ $ discosub run <span class="pl-k">&lt;</span>specified root domain<span class="p
 </ul>
 
 <h3>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute</h3>
+
+<p>Fork discosub repository, add your functionalities, send a pull request, that's all folks !</p>
+
+<h3>
 <a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>Discosub was created by <a href="http://www.herve-beraud.ovh/">Hervé Beraud</a> (<a href="https://github.com/4383" class="user-mention">@4383</a>).</p>
+
+<h3>
+<a id="licence" class="anchor" href="#licence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licence</h3>
+
+<p>Free software: GNU General Public License v3</p>
 
 <h3>
 <a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support or Contact</h3>
