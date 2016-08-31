@@ -1,5 +1,5 @@
 ===============
-discosub 0.1.11
+discosub 0.1.12
 ===============
 
 Free and opensource subdomain scanner. Discosub is simple and faster
