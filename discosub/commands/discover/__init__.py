@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import argparse
 import sys
 import os
@@ -21,7 +22,7 @@ def convert_timedelta(duration):
     return hours, minutes, seconds
 
 
-class Tester(threading.Thread):
+class Worker(threading.Thread):
 
     def __init__(self, queue, name):
         threading.Thread.__init__(self)
@@ -69,7 +70,7 @@ def analyze(target):
     queue = Queue.Queue()
     workers = []
     for index in range(0, 1000):
-        worker = Tester(queue, "worker{0}".format(index))
+        worker = Worker(queue, "worker{0}".format(index))
         worker.start()
         workers.append(worker)
 
