@@ -2,7 +2,7 @@
 
 __author__ = 'Hervé Beraud'
 __email__ = 'herveberaud.pro@gmail.com'
-__version__ = '0.1.6'
+__version__ = '0.1.10'
 
 from discosub.main import main
 
