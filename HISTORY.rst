@@ -29,3 +29,8 @@ History
 
 * Fix somes documentation mistakes and syntax error
 * Update pypi project classifiers
+
+0.1.13 (2016-09-01)
+-------------------
+
+* Link official webpage with repo (pypi, github, docker)
