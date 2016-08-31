@@ -2,7 +2,7 @@
 
 __author__ = 'Hervé Beraud'
 __email__ = 'herveberaud.pro@gmail.com'
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 import argparse
 import sys
