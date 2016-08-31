@@ -1,12 +1,3 @@
-
-Try pandoc!
-
-pandoc --from markdown --to rst
-
-  from
-
-to
-
 discosub 0.1.1
 ==============
 
@@ -17,11 +8,28 @@ Simple and faster subdomain discover
 Usages
 ------
 
+from pypi
+
+.. code:: shell
+
+    pip install discosub
+    discosub run <your target domain>
+
+from docker container
+
+.. code:: shell
+
+    docker pull 4383/discosub:latest
+    docker run -e "TARGET=<your target domain>" 4383/discosub:latest
+
+from sources
+
 .. code:: shell
 
     $ git clone https://github.com/4383/discosub
     $ cd discosub
-    $ python discosub/main.py run <your target domain>
+    $ python setup.py install
+    $ discosub run <your target domain>
 
 Prerequistes
 ------------
