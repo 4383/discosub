@@ -1,4 +1,4 @@
-# discosub 0.1.6
+# discosub 0.1.7
 
 Simple and faster subdomain discover
 
