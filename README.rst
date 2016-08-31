@@ -5,30 +5,54 @@ Simple and faster subdomain discover
 
 -  Free software: GNU General Public License v3
 
-Usages
-------
+install
+-------
 
-from pypi
+From pypi
+~~~~~~~~~
 
 .. code:: shell
 
     pip install discosub
-    discosub run <your target domain>
 
-from docker container
+As a docker container
+~~~~~~~~~~~~~~~~~~~~~
 
 .. code:: shell
 
     docker pull 4383/discosub:latest
-    docker run -e "TARGET=<your target domain>" 4383/discosub:latest
 
 from sources
+~~~~~~~~~~~~
 
 .. code:: shell
 
     $ git clone https://github.com/4383/discosub
     $ cd discosub
     $ python setup.py install
+
+Usages
+------
+
+From pypi
+~~~~~~~~~
+
+.. code:: shell
+
+    discosub run <your target domain>
+
+Inside a docker container
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code:: shell
+
+    docker run -e "TARGET=<your target domain>" 4383/discosub:latest
+
+from sources
+~~~~~~~~~~~~
+
+.. code:: shell
+
     $ discosub run <your target domain>
 
 Prerequistes
@@ -60,7 +84,3 @@ This package was created with `Cookiecutter`_ and the
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
-
-pandoc 1.17.2
-
-© 2013–2015 John MacFarlane
