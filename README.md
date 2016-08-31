@@ -1,4 +1,4 @@
-# discosub 0.1.12
+# discosub 0.1.13
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.
@@ -7,7 +7,7 @@ Discosub test if a list of subdomains exist via fuzzing on root domain.
 
 Discosub use dictionaries for perform an analyze (BruteForce).
 
-* Free software: GNU General Public License v3
+For more details visit the [official webpage project](https://4383.github.io/discosub/).
 
 ## install
 ### From pypi
@@ -46,6 +46,10 @@ docker run -e "TARGET=google.com" 4383/discosub:latest
 
 ## Guidelines
 * Perform whois request on discovered subdomains
+
+## License
+
+* Free software: GNU General Public License v3
 
 ## Credits
 Author: 4383 (Hervé Beraud)

@@ -19,12 +19,12 @@ test_requirements = [
 
 setup(
     name='discosub',
-    version='0.1.12',
+    version='0.1.13',
     description="Simple, Faster, & Efficient, Subdomain Discovery Scanner",
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
     author_email='herveberaud.pro@gmail.com',
-    url='https://github.com/4383/discosub',
+    url='https://4383.github.io/discosub/',
     packages=find_packages(
         exclude=['contrib', 'docs', 'tests*', '__pycache__']
     ),
