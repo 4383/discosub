@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -10,7 +10,7 @@ with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
 requirements = [
-    'Click>=6.0',
+    'click',
     # TODO: put package requirements here
 ]
 
@@ -20,17 +20,16 @@ test_requirements = [
 
 setup(
     name='discosub',
-    version='0.1.0',
+    version='0.1.1',
     description="Subdomain discover",
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
     author_email='herveberaud.pro@gmail.com',
     url='https://github.com/4383/discosub',
-    packages=[
-        'discosub',
-    ],
-    package_dir={'discosub':
-                 'discosub'},
+    packages=find_packages(
+        exclude=['contrib', 'docs', 'tests*', '__pycache__']
+    ),
+    package_dir={'discosub':'discosub'},
     entry_points={
         'console_scripts': [
             'discosub=discosub:main'
@@ -44,7 +43,7 @@ setup(
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License',
+        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',
         'Natural Language :: English',
         "Programming Language :: Python :: 2",
         'Programming Language :: Python :: 2.6',

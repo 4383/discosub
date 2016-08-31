@@ -2,7 +2,7 @@
 
 __author__ = 'Hervé Beraud'
 __email__ = 'herveberaud.pro@gmail.com'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 import argparse
 import sys
@@ -25,6 +25,7 @@ def run(**kwargs):
 
 @main.command()
 def version():
+    """Display Discosub Version"""
     print('discosub {version}'.format(version=__version__),)
 
 
