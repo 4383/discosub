@@ -1,4 +1,4 @@
-# discosub 0.1.15
+# discosub 0.1.16
 
 [![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=build branch master)]()
 [![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=build branch development)]()
