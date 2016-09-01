@@ -1,10 +1,16 @@
 # discosub 0.1.15
 
-master branch: ![build status](https://travis-ci.org/4383/discosub.svg?branch=master)
+![build status for master branch](https://travis-ci.org/4383/discosub.svg?branch=master) (master)
 
-development branch: ![build status](https://travis-ci.org/4383/discosub.svg?branch=development)
+![build status for development branch](https://travis-ci.org/4383/discosub.svg?branch=development) (development)
 
 ![official pypi package](https://badge.fury.io/py/discosub.svg)
+
+[![Docker Stars](https://img.shields.io/docker/stars/_/discosub.svg?maxAge=2592000)]()
+
+[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/discosub.svg?maxAge=2592000)]()
+
+[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/discosub.svg?maxAge=2592000)]()
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.

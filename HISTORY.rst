@@ -46,5 +46,7 @@ History
 * Fixing mistake on Dockerfile (docker run command)
 
 0.1.16 (2016-09-02)
+-------------------
 
 * Apply Alpha development status for pypi classifiers
+* Adding badges on README
