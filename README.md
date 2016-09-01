@@ -1,8 +1,7 @@
 # discosub 0.1.15
 
-[![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=Build master)()
-[![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=Build development)() 
-![build status for development branch](https://travis-ci.org/4383/discosub.svg?branch=development) (development)
+![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=build branch master)()
+![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=build branch development)()
 
 ![official pypi package](https://badge.fury.io/py/discosub.svg)
 [![PyPI](https://img.shields.io/pypi/l/discosub.svg?maxAge=2592000)]()
