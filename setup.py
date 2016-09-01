@@ -40,7 +40,7 @@ setup(
     zip_safe=False,
     keywords='discosub',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
         'Intended Audience :: Information Technology',
