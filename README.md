@@ -1,4 +1,4 @@
-# discosub 0.1.14
+# discosub 0.1.15
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.

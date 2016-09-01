@@ -34,3 +34,13 @@ History
 -------------------
 
 * Link official webpage with repo (pypi, github, docker)
+
+0.1.14 (2016-09-01)
+-------------------
+
+* Fixing bad packaging. Error when loading dictionaries files.
+
+0.1.15 (2016-09-01)
+-------------------
+
+* Fixing mistake on Dockerfile (docker run command)
