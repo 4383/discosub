@@ -1,4 +1,19 @@
-# discosub 0.1.15
+# discosub 0.1.16
+
+[![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=build branch master)]()
+[![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=build branch development)]()
+
+![official pypi package](https://badge.fury.io/py/discosub.svg)
+[![PyPI](https://img.shields.io/pypi/l/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/wheel/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/format/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/pyversions/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/implementation/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/status/discosub.svg?maxAge=2592000)]()
+
+[![Docker Stars](https://img.shields.io/docker/stars/4383/discosub.svg?maxAge=2592000)]()
+[![Docker Pulls](https://img.shields.io/docker/pulls/4383/discosub.svg?maxAge=2592000)]()
+[![Docker Automated buil](https://img.shields.io/docker/automated/4383/discosub.svg?maxAge=2592000)]()
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.
