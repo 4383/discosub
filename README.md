@@ -1,7 +1,10 @@
 # discosub 0.1.15
 
 master branch: ![build status](https://travis-ci.org/4383/discosub.svg?branch=master)
-development branch: ![build status](https://travis-ci.org/4383/discosub.svg?branch=Development)
+
+development branch: ![build status](https://travis-ci.org/4383/discosub.svg?branch=development)
+
+![official pypi package](https://badge.fury.io/py/discosub.svg)
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.
