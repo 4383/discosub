@@ -5,12 +5,12 @@
 ![build status for development branch](https://travis-ci.org/4383/discosub.svg?branch=development) (development)
 
 ![official pypi package](https://badge.fury.io/py/discosub.svg)
-[![PyPI](https://img.shields.io/pypi/l/Django.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/wheel/Django.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/format/Django.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/pyversions/Django.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/implementation/Django.svg?maxAge=2592000)]()
-[![PyPI](https://img.shields.io/pypi/status/Django.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/l/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/wheel/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/format/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/pyversions/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/implementation/discosub.svg?maxAge=2592000)]()
+[![PyPI](https://img.shields.io/pypi/status/discosub.svg?maxAge=2592000)]()
 
 [![Docker Stars](https://img.shields.io/docker/stars/4383/discosub.svg?maxAge=2592000)]()
 [![Docker Pulls](https://img.shields.io/docker/pulls/4383/discosub.svg?maxAge=2592000)]()
