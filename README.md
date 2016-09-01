@@ -1,7 +1,6 @@
 # discosub 0.1.15
 
-![build status for master branch](https://travis-ci.org/4383/discosub.svg?branch=master) (master)
-
+![build status for master branch](https://travis-ci.org/4383/discosub.svg?branch=master) (master) 
 ![build status for development branch](https://travis-ci.org/4383/discosub.svg?branch=development) (development)
 
 ![official pypi package](https://badge.fury.io/py/discosub.svg)
