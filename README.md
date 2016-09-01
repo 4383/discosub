@@ -6,11 +6,11 @@
 
 ![official pypi package](https://badge.fury.io/py/discosub.svg)
 
-[![Docker Stars](https://img.shields.io/docker/stars/_/discosub.svg?maxAge=2592000)]
+[![Docker Stars](https://img.shields.io/docker/stars/4383/discosub.svg?maxAge=2592000)]()
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/mashape/discosub.svg?maxAge=2592000)]
+[![Docker Pulls](https://img.shields.io/docker/pulls/4383/discosub.svg?maxAge=2592000)]()
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/jrottenberg/discosub.svg?maxAge=2592000)]
+[![Docker Automated buil](https://img.shields.io/docker/automated/4383/discosub.svg?maxAge=2592000)]()
 
 Free and opensource subdomain scanner. Discosub is simple and
 faster subdomain discover.
