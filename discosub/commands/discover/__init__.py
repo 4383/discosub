@@ -11,8 +11,10 @@ try:
 except ImportError:
     import queue as Queue
 from discosub.core.ui import info, success, fail
+import discosub
 
 results = []
+BASE_PATH = os.path.dirname(discosub.__file__)
 
 def convert_timedelta(duration):
     days, seconds = duration.days, duration.seconds
@@ -61,9 +63,10 @@ def thats_all_folks(start):
 def analyze(target):
     start = datetime.datetime.now()
     subdomains = []
-    with open(os.path.join("dictionaries", "default.txt")) as myDictionary:
-        subdomains = myDictionary.readlines()
 
+    with open(os.path.join(BASE_PATH, "dictionaries", "default.py")) as myDictionary:
+        subdomains = myDictionary.readlines()
+        
     print("We have {0} possibilities".format(len(subdomains)))
     print("Starting at {0}\n".format(start))
 
