@@ -57,3 +57,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# Temporary files
+README.rst.tmp
