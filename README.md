@@ -1,4 +1,4 @@
-# discosub 0.1.16
+# discosub 0.2.0
 
 [![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=build branch master)]()
 [![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=build branch development)]()
@@ -22,35 +22,52 @@ Discosub test if a list of subdomains exist via fuzzing on root domain.
 
 Discosub use dictionaries for perform an analyze (BruteForce).
 
+You can use discosub directly from a python interpreter, or use it inside docker container.
+
+You can perform an anonymous scanning directly
+by using a specific [docker version](https://hub.docker.com/r/4383/discosub/tags/) (alias tor).
+
+Different type of docker container are available:
+* simple docker container with discosub installed on
+* [torified (tor)](https://www.torproject.org/) docker container with discosub installed on (all discosub scanning connections use tor network)
+
 For more details visit the [official webpage project](https://4383.github.io/discosub/).
 
-## install
-### From pypi
+## Install from pypi
 ```shell
-pip install discosub
+pip install -U discosub
 ```
 
-### As a docker container
+## Install as a docker container
 ```shell
 docker pull 4383/discosub:latest
 ```
 
-### from sources
+## Install as an anonymous scan (tor + docker)
+```shell
+docker pull 4383/discosub:tor
+```
+
+### Install from sources
 ```shell
 $ git clone https://github.com/4383/discosub
 $ cd discosub
 $ python setup.py install
 ```
 
-## Usages
-### with a system install (from pypi or from sources)
+## Usages from a local installation (from pypi or from sources)
 ```shell
 discosub run google.com
 ```
 
-### inside a docker container
+## Usages inside a docker container
 ```shell
 docker run -e "TARGET=google.com" 4383/discosub:latest
+```
+
+## Usages as an anonymous scanner from docker container (using tor inside docker)
+```shell
+docker run -e "TARGET=google.com" 4383/discosub:tor
 ```
 
 ## Prerequistes
@@ -58,12 +75,17 @@ docker run -e "TARGET=google.com" 4383/discosub:latest
 
 ## Features
 * Analyze a root domain and discover its subdomains
+* Analyze domain over tor via specific docker container (anonymous scanning)
+
+## Advertissments
+* scan over docker container are more slowly than direct usage from python interpreter
+* scan over torified docker container are more slowly than direct usage from python interpreter and classical discosub docker container
+* scan over torified docker container are more verbose than an classical scanning (identifiable IP)
 
 ## Guidelines
 * Perform whois request on discovered subdomains
 
 ## License
-
 * Free software: GNU General Public License v3
 
 ## Credits
