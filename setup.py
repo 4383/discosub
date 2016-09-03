@@ -5,7 +5,7 @@
 # | $$  \ $$  | $$  | $$  \__/| $$  \__/| $$  \ $$| $$  \__/| $$  | $$| $$  \ $$ #
 # | $$  | $$  | $$  |  $$$$$$ | $$      | $$  | $$|  $$$$$$ | $$  | $$| $$$$$$$  #
 # | $$  | $$  | $$   \____  $$| $$      | $$  | $$ \____  $$| $$  | $$| $$__  $$ #
-# | $$  | $$  | $$   /$$  \ $$| $$    $$| $$  | $$ /$$  \ $$| $$  | $$| $$  \ $$ #
+# | $$  | $$  | $$   /$$  \ $$| $$   /$$| $$  | $$ /$$  \ $$| $$  | $$| $$  \ $$ #
 # | $$$$$$$/ /$$$$$$|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/| $$$$$$$/ #
 # |_______/ |______/ \______/  \______/  \______/  \______/  \______/ |_______/  #
 #                                                                                #
@@ -15,7 +15,7 @@
 ##################################################################################
 from setuptools import setup, find_packages
 
-with open('README.md') as readme_file:
+with open('README.rst') as readme_file:
     readme = readme_file.read()
 
 with open('HISTORY.rst') as history_file:
@@ -32,7 +32,7 @@ test_requirements = [
 
 setup(
     name='discosub',
-    version='0.2.1',
+    version='0.2.0',
     description="Simple, Faster, & Efficient, Subdomain Discovery Scanner",
     long_description=readme + '\n\n' + history,
     author="Hervé Beraud",
