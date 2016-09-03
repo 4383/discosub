@@ -38,15 +38,15 @@ Install as a docker container
 
     docker pull 4383/discosub:latest
 
-Install as an anonymous scan (tor + docker)
--------------------------------------------
+Install as an anonymous scanner (tor + docker)
+----------------------------------------------
 
 .. code:: shell
 
     docker pull 4383/discosub:tor
 
 Install from sources
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 .. code:: shell
 

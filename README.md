@@ -43,7 +43,7 @@ pip install -U discosub
 docker pull 4383/discosub:latest
 ```
 
-## Install as an anonymous scan (tor + docker)
+## Install as an anonymous scanner (tor + docker)
 ```shell
 docker pull 4383/discosub:tor
 ```
