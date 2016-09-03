@@ -4,26 +4,32 @@
 # | $$  \ $$  | $$  | $$  \__/| $$  \__/| $$  \ $$| $$  \__/| $$  | $$| $$  \ $$ #
 # | $$  | $$  | $$  |  $$$$$$ | $$      | $$  | $$|  $$$$$$ | $$  | $$| $$$$$$$  #
 # | $$  | $$  | $$   \____  $$| $$      | $$  | $$ \____  $$| $$  | $$| $$__  $$ #
-# | $$  | $$  | $$   /$$  \ $$| $$    $$| $$  | $$ /$$  \ $$| $$  | $$| $$  \ $$ #
+# | $$  | $$  | $$   /$$  \ $$| $$   /$$| $$  | $$ /$$  \ $$| $$  | $$| $$  \ $$ #
 # | $$$$$$$/ /$$$$$$|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/|  $$$$$$/| $$$$$$$/ #
 # |_______/ |______/ \______/  \______/  \______/  \______/  \______/ |_______/  #
 #                                                                                #
-# discosub vdiscosub = '0.2.1'                                                                #
+# discosub 0.2.0                                                                 #
 # author: 4383 (Hervé Beraud)                                                    #
 # url: https://github.com/4383/discosub                                          #
 ##################################################################################
-FROM python:3-onbuild
-
-WORKDIR /usr/src/app/
-RUN python setup.py install
-
-ENV TARGET=google.com
+FROM ubuntu:latest
 
 RUN apt-get update
 RUN apt-get -y install tor && \
-    apt-get -y install proxychains && \
-    apt-get -y install polipo
+    apt-get -y install proxychains
+
+RUN apt-get -y install python-pip
+
+
+COPY . /usr/src/discosub
+WORKDIR /usr/src/discosub
+
+RUN pip install -r requirements.txt
+
+ENV TARGET=google.com
+WORKDIR /usr/src/discosub/discosub
+ENV PYTHONPATH="${PYTHONPATH}:/usr/src/discosub"
 
 CMD service tor start && \
-    service polipo start && \
-    proxychains discosub run $TARGET
+    service tor status && \
+    proxychains python main.py run $TARGET
