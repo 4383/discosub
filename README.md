@@ -48,7 +48,7 @@ docker pull 4383/discosub:latest
 docker pull 4383/discosub:tor
 ```
 
-### Install from sources
+## Install from sources
 ```shell
 $ git clone https://github.com/4383/discosub
 $ cd discosub
