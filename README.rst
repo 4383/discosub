@@ -1,6 +1,6 @@
-===============
-discosub 0.1.16
-===============
+==============
+discosub 0.2.0
+==============
 
 Free and opensource subdomain scanner. Discosub is simple and faster
 subdomain discover.
@@ -9,26 +9,44 @@ Discosub test if a list of subdomains exist via fuzzing on root domain.
 
 Discosub use dictionaries for perform an analyze (BruteForce).
 
-For more details visit the `official webpage project`_.
+You can use discosub directly from a python interpreter, or use it
+inside docker container.
 
-install
--------
-from pypi
-~~~~~~~~~
+You can perform an anonymous scanning directly by using a specific
+`docker version <https://hub.docker.com/r/4383/discosub/tags/>`__ (alias
+tor).
+
+Different type of docker container are available: \* simple docker
+container with discosub installed on \* `torified
+(tor) <https://www.torproject.org/>`__ docker container with discosub
+installed on (all discosub scanning connections use tor network)
+
+For more details visit the `official webpage
+project <https://4383.github.io/discosub/>`__.
+
+Install from pypi
+-----------------
 
 .. code:: shell
 
-    pip install discosub
+    pip install -U discosub
 
-as a docker container
-~~~~~~~~~~~~~~~~~~~~~
+Install as a docker container
+-----------------------------
 
 .. code:: shell
 
     docker pull 4383/discosub:latest
 
-from sources
-~~~~~~~~~~~~
+Install as an anonymous scanner (tor + docker)
+----------------------------------------------
+
+.. code:: shell
+
+    docker pull 4383/discosub:tor
+
+Install from sources
+--------------------
 
 .. code:: shell
 
@@ -36,21 +54,26 @@ from sources
     $ cd discosub
     $ python setup.py install
 
-Usages
-------
-with a system install (from pypi or from sources)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Usages from a local installation (from pypi or from sources)
+------------------------------------------------------------
 
 .. code:: shell
 
     discosub run google.com
 
-inside a docker container
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Usages inside a docker container
+--------------------------------
 
 .. code:: shell
 
     docker run -e "TARGET=google.com" 4383/discosub:latest
+
+Usages as an anonymous scanner from docker container (using tor inside docker)
+------------------------------------------------------------------------------
+
+.. code:: shell
+
+    docker run -e "TARGET=google.com" 4383/discosub:tor
 
 Prerequistes
 ------------
@@ -61,6 +84,18 @@ Features
 --------
 
 -  Analyze a root domain and discover its subdomains
+-  Analyze domain over tor via specific docker container (anonymous
+   scanning)
+
+Advertissments
+--------------
+
+-  scan over docker container are more slowly than direct usage from
+   python interpreter
+-  scan over torified docker container are more slowly than direct usage
+   from python interpreter and classical discosub docker container
+-  scan over torified docker container are more verbose than an
+   classical scanning (identifiable IP)
 
 Guidelines
 ----------
@@ -77,9 +112,7 @@ Credits
 
 Author: 4383 (Hervé Beraud)
 
-This package was created with `Cookiecutter`_ and the
-`audreyr/cookiecutter-pypackage`_ project template.
-
-.. _official webpage project: https://4383.github.io/discosub/
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _audreyr/cookiecutter-pypackage: https://github.com/audreyr/cookiecutter-pypackage
+This package was created with
+`Cookiecutter <https://github.com/audreyr/cookiecutter>`__ and the
+`audreyr/cookiecutter-pypackage <https://github.com/audreyr/cookiecutter-pypackage>`__
+project template.

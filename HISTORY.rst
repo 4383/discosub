@@ -50,3 +50,8 @@ History
 
 * Apply Alpha development status for pypi classifiers
 * Adding badges on README
+
+0.2.0 (2016-09-03)
+-------------------
+
+* New docker tag for allow anonymous scanning. Integrate a second dockerfile for build a container where network connections are relayed per a tor client embdded inside this container.
