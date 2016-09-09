@@ -18,9 +18,10 @@ def main():
 
 @main.command()
 @click.argument('target')
-def run(**kwargs):
-    '''Run a subdomain scanner on specified target'''
-    analyze(kwargs['target'])
+@click.option('--agressive', '-a', is_flag=True, help="Use agressive scanning mode (disabled by default)")
+def run(agressive, **kwargs):
+    '''Run a subdomain scanner on specified TARGET'''
+    analyze(kwargs['target'], agressive)
 
 
 @main.command()
