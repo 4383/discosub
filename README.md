@@ -82,7 +82,7 @@ docker run -e "TARGET=google.com" 4383/discosub:tor
 * scan over torified docker container are more slowly than direct usage from python interpreter and classical discosub docker container
 * scan over torified docker container are more verbose than an classical scanning (identifiable IP)
 
-## Guidelines
+## Upcoming features
 * Perform whois request on discovered subdomains
 
 ## License
@@ -91,6 +91,14 @@ docker run -e "TARGET=google.com" 4383/discosub:tor
 ## Credits
 Author: 4383 (Hervé Beraud)
 
-This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter)
-and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+For create this project I've used some tools and packages so I want to thank them !
+
+* [bumpversion](https://pypi.python.org/pypi/bumpversion). A magical python tools for automatic bumping version.
+* [click](http://click.pocoo.org/). An amazing python package for handle cli options, arguments and flags, and more features !
+* [Vincent Driessen](http://nvie.com/about/) and his [successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+* [The Semantic Versioning specification](http://semver.org/). A beautiful crafted specification who help me each days at work and on my personal projects.
+* [Cookiecutter](https://github.com/audreyr/cookiecutter). A fucking good python command-line utility for initialize project.
+* and all others what I've forgotten
+
+This project was initialized with the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
 project template.
