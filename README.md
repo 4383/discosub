@@ -60,14 +60,19 @@ $ python setup.py install
 discosub run google.com
 ```
 
-## Usages inside a docker container
+## Usages inside a docker container (agressive mode off for moment)
 ```shell
 docker run -e "TARGET=google.com" 4383/discosub:latest
 ```
 
-## Usages as an anonymous scanner from docker container (using tor inside docker)
+## Usages as an anonymous scanner from docker container (using tor inside docker) (agressive mode off for moment)
 ```shell
 docker run -e "TARGET=google.com" 4383/discosub:tor
+```
+
+## Usages for an agressive mode scanning
+```shell
+discosub run google.com -a
 ```
 
 ## Prerequistes
@@ -84,6 +89,9 @@ docker run -e "TARGET=google.com" 4383/discosub:tor
 
 ## Upcoming features
 * Perform whois request on discovered subdomains
+* Pass discosub options to docker container on run
+* Perform scanning from user keywords file
+* Save output into a file
 
 ## License
 * Free software: GNU General Public License v3

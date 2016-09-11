@@ -7,8 +7,6 @@ History
 
 * Optimize scanning by using a new tiny list of frequently used subdomains
 * Introduce more efficient and faster default scanning mode, agressive scanning mode, and user keywords list based on scanning mode
-* Introduce verbose mode (print or not current testing value for shell redirect output)
-* Save results in specified output file
 
 0.2.0 (2016-09-03)
 -------------------
