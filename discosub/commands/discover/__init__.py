@@ -60,19 +60,25 @@ def thats_all_folks(start):
         print(result)
 
 
-def analyze(target):
+def analyze(target, agressive):
     start = datetime.datetime.now()
     subdomains = []
 
-    with open(os.path.join(BASE_PATH, "dictionaries", "default.py")) as myDictionary:
+    keywords_file = os.path.join(BASE_PATH, "dictionaries", "essential.py")
+    if agressive:
+        keywords_file = os.path.join(BASE_PATH, "dictionaries", "agressive.py")
+    with open(keywords_file) as myDictionary:
         subdomains = myDictionary.readlines()
-        
+
     print("We have {0} possibilities".format(len(subdomains)))
     print("Starting at {0}\n".format(start))
 
     queue = Queue.Queue()
     workers = []
-    for index in range(0, 1000):
+    max_worker = 30
+    if agressive:
+        max_worker = 400
+    for index in range(0, max_worker):
         worker = Worker(queue, "worker{0}".format(index))
         worker.start()
         workers.append(worker)

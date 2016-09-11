@@ -1,4 +1,4 @@
-# discosub 0.2.0
+# discosub 0.3.0
 
 [![Travis branch](https://img.shields.io/travis/4383/discosub/master.svg?maxAge=2592000&label=build branch master)]()
 [![Travis branch](https://img.shields.io/travis/4383/discosub/development.svg?maxAge=2592000&label=build branch development)]()
@@ -60,14 +60,19 @@ $ python setup.py install
 discosub run google.com
 ```
 
-## Usages inside a docker container
+## Usages inside a docker container (agressive mode off for moment)
 ```shell
 docker run -e "TARGET=google.com" 4383/discosub:latest
 ```
 
-## Usages as an anonymous scanner from docker container (using tor inside docker)
+## Usages as an anonymous scanner from docker container (using tor inside docker) (agressive mode off for moment)
 ```shell
 docker run -e "TARGET=google.com" 4383/discosub:tor
+```
+
+## Usages for an agressive mode scanning
+```shell
+discosub run google.com -a
 ```
 
 ## Prerequistes
@@ -82,8 +87,11 @@ docker run -e "TARGET=google.com" 4383/discosub:tor
 * scan over torified docker container are more slowly than direct usage from python interpreter and classical discosub docker container
 * scan over torified docker container are more verbose than an classical scanning (identifiable IP)
 
-## Guidelines
+## Upcoming features
 * Perform whois request on discovered subdomains
+* Pass discosub options to docker container on run
+* Perform scanning from user keywords file
+* Save output into a file
 
 ## License
 * Free software: GNU General Public License v3
@@ -91,6 +99,14 @@ docker run -e "TARGET=google.com" 4383/discosub:tor
 ## Credits
 Author: 4383 (Hervé Beraud)
 
-This package was created with [Cookiecutter](https://github.com/audreyr/cookiecutter)
-and the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
+For create this project I've used some tools and packages so I want to thank them !
+
+* [bumpversion](https://pypi.python.org/pypi/bumpversion). A magical python tools for automatic bumping version.
+* [click](http://click.pocoo.org/). An amazing python package for handle cli options, arguments and flags, and more features !
+* [Vincent Driessen](http://nvie.com/about/) and his [successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+* [The Semantic Versioning specification](http://semver.org/). A beautiful crafted specification who help me each days at work and on my personal projects.
+* [Cookiecutter](https://github.com/audreyr/cookiecutter). A fucking good python command-line utility for initialize project.
+* and all others what I've forgotten
+
+This project was initialized with the [audreyr/cookiecutter-pypackage](https://github.com/audreyr/cookiecutter-pypackage)
 project template.

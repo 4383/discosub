@@ -2,7 +2,7 @@
 
 __author__ = 'Hervé Beraud'
 __email__ = 'herveberaud.pro@gmail.com'
-__version__ = '0.2.0'
+__version__ = '0.3.0'
 
 import argparse
 import sys
@@ -18,9 +18,10 @@ def main():
 
 @main.command()
 @click.argument('target')
-def run(**kwargs):
-    '''Run a subdomain scanner on specified target'''
-    analyze(kwargs['target'])
+@click.option('--agressive', '-a', is_flag=True, help="Use agressive scanning mode (disabled by default)")
+def run(agressive, **kwargs):
+    '''Run a subdomain scanner on specified TARGET'''
+    analyze(kwargs['target'], agressive)
 
 
 @main.command()
