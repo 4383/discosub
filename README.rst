@@ -75,6 +75,13 @@ Usages as an anonymous scanner from docker container (using tor inside docker)
 
     docker run -e "TARGET=google.com" 4383/discosub:tor
 
+Usages for an agressive scanning mode
+-------------------------------------
+
+.. code:: shell
+
+    discosub run google.com -a
+
 Prerequistes
 ------------
 
@@ -97,10 +104,13 @@ Advertissments
 -  scan over torified docker container are more verbose than an
    classical scanning (identifiable IP)
 
-Guidelines
-----------
+Upcoming features
+-----------------
 
--  Perform whois request on discovered subdomains
+- Perform whois request on discovered subdomains
+- Pass discosub options to docker container on run
+- Perform scanning from user keywords file
+- Save output into a file
 
 License
 -------
