@@ -1,21 +1,36 @@
 language: python
+
 python: 3.5
+
+service:
+    - docker
+
 env:
-- TOXENV=py35
-- TOXENV=py34
-- TOXENV=py33
-- TOXENV=py27
-- TOXENV=py26
-- TOXENV=pypy
+    - TOXENV=py35
+    - TOXENV=py34
+    - TOXENV=py33
+    - TOXENV=py27
+    - TOXENV=py26
+    - TOXENV=pypy
+
 install: pip install -U tox
-script: tox -e ${TOXENV}
+
+script: 
+    - tox -e ${TOXENV}
+    - docker build -t master .
+    - docker run -d master
+    - docker ps -a | grep master
+    - docker build -t master-tor -f Dockerfile-tor .
+    - docker run -d master-tor
+    - docker ps -a | grep master-tor
+
 deploy:
-  provider: pypi
-  distributions: sdist bdist_wheel
-  user: 4383
-  password:
-    secure: Qx3/n8pYgYowJ/ZNdzIqqYRZXJPc3HbDVjzq0VXFjxC/glv48N+PUr3eg44lDl4fIHpw91ZzDNwaiMhL41SJ4CK7MhV34vQXcCyORhDAuUbHqhyRaLiDrTtVlWPSaQJfOXAy2Xzw6IBbTBxy4qQyJGxDDyvhX9aPOfpVBwIy8gjHtP+Rgs92bWyHw/sbAwAexUDnA8i9WJMWxo5KOShCJwsuBb7oOoxsywTSfaWKb+flkbHcmSZS0TeGbOx06Ahyh/KbD2eEu0K/FDrDG/CKZnwR58hhcaQV52kvEAymgsTXxY1I4WQI+0lvhb269rwBAQzhm27HZaHnRYf3jueKje7IMKte8XuNA+rQesnCuOxOLBXrnfzCPfCs1KNuNnqPNgBQC2XIw72zJ7sDCWw2k0lgxyHqvO31RcWbFoe6HTBjDGSsqnqBmyfy27DASS/RyjwrY5KSB3wh/odOQdIUgIJxCCXKf4uv4P9Ss7uuSGSqLzLq3ZPmSqKibr78AmlR5sfji2XjmhNChvZM7rcJIGhWuAPIY92iWsLpwnEMUe69Ydlvv4e/UEyiySOrZBcV2bWZhjvA7hH0MR7NALS84wuIPxF/0ayO+httVSsU/K/Z97ki+r6BsUPJ1W1edRBGISD4E9fBoj6feTCynAvsK96ALTL3CtPEgxTqyzINmbs=
-  on:
-    branch: master
-    repo: 4383/discosub
-    condition: "$TOXENV == py27"
+    provider: pypi
+    distributions: sdist bdist_wheel
+    user: 4383
+    password:
+        secure: Qx3/n8pYgYowJ/ZNdzIqqYRZXJPc3HbDVjzq0VXFjxC/glv48N+PUr3eg44lDl4fIHpw91ZzDNwaiMhL41SJ4CK7MhV34vQXcCyORhDAuUbHqhyRaLiDrTtVlWPSaQJfOXAy2Xzw6IBbTBxy4qQyJGxDDyvhX9aPOfpVBwIy8gjHtP+Rgs92bWyHw/sbAwAexUDnA8i9WJMWxo5KOShCJwsuBb7oOoxsywTSfaWKb+flkbHcmSZS0TeGbOx06Ahyh/KbD2eEu0K/FDrDG/CKZnwR58hhcaQV52kvEAymgsTXxY1I4WQI+0lvhb269rwBAQzhm27HZaHnRYf3jueKje7IMKte8XuNA+rQesnCuOxOLBXrnfzCPfCs1KNuNnqPNgBQC2XIw72zJ7sDCWw2k0lgxyHqvO31RcWbFoe6HTBjDGSsqnqBmyfy27DASS/RyjwrY5KSB3wh/odOQdIUgIJxCCXKf4uv4P9Ss7uuSGSqLzLq3ZPmSqKibr78AmlR5sfji2XjmhNChvZM7rcJIGhWuAPIY92iWsLpwnEMUe69Ydlvv4e/UEyiySOrZBcV2bWZhjvA7hH0MR7NALS84wuIPxF/0ayO+httVSsU/K/Z97ki+r6BsUPJ1W1edRBGISD4E9fBoj6feTCynAvsK96ALTL3CtPEgxTqyzINmbs=
+    on:
+        branch: master
+        repo: 4383/discosub
+        condition: "$TOXENV == py27"
