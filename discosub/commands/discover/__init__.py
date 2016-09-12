@@ -55,6 +55,8 @@ def thats_all_folks(start):
     print("Ending at {0}\n".format(end))
     print("{0} results find in {1} hours {2} minutes {3} seconds".format(
         len(results), hours, minutes, seconds))
+    if len(results) == 0:
+        return
     print("Results:")
     for result in results:
         print(result)
